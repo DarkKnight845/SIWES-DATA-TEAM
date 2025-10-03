@@ -539,6 +539,7 @@ def process_mitsui_data(train_path, test_path, train_labels_path, target_pairs_p
     # Load data
     print("Loading data...")
     train_df = pd.read_csv(
+<<<<<<< HEAD
         r"C:\Users\ayemi\OneDrive\Documents\Commodity_Prediction\mitsui-commodity-prediction-challenge\target_pairs.csv"
     )
     test_df = pd.read_csv(
@@ -549,6 +550,18 @@ def process_mitsui_data(train_path, test_path, train_labels_path, target_pairs_p
     )
     target_pairs = pd.read_csv(
         r"C:\Users\ayemi\OneDrive\Documents\Commodity_Prediction\mitsui-commodity-prediction-challenge\target_pairs.csv"
+=======
+        r"C:\Users\USER\Documents\Commodity_Prediction\mitsui-commodity-prediction-challenge\train.csv"
+    )
+    test_df = pd.read_csv(
+        r"C:\Users\USER\Documents\Commodity_Prediction\mitsui-commodity-prediction-challenge\test.csv"
+    )
+    train_labels = pd.read_csv(
+        r"C:\Users\USER\Documents\Commodity_Prediction\mitsui-commodity-prediction-challenge\train_labels.csv"
+    )
+    target_pairs = pd.read_csv(
+        r"C:\Users\USER\Documents\Commodity_Prediction\mitsui-commodity-prediction-challenge\target_pairs.csv"
+>>>>>>> c0e263b8529304a995e8e2ba53991e52d91e19c8
     )
 
     # Initialize feature engineer
@@ -573,6 +586,10 @@ def process_mitsui_data(train_path, test_path, train_labels_path, target_pairs_p
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
+=======
+
+>>>>>>> c0e263b8529304a995e8e2ba53991e52d91e19c8
     np.random.seed(42)
     n_days = 1000
 
@@ -601,6 +618,7 @@ if __name__ == "__main__":
     print(
         f"New features added: {len(results['train'].columns) - len(sample_df.columns)}"
     )
+<<<<<<< HEAD
     trains_csv = pd.read_csv(
         r"C:\Users\ayemi\OneDrive\Documents\Commodity_Prediction\mitsui-commodity-prediction-challenge\target_pairs.csv"
     )
@@ -622,3 +640,5 @@ if __name__ == "__main__":
     print(f"Target features shape: {results['target_features'].shape}")
     print("Feature groups:")
     print(feature_groups)
+=======
+>>>>>>> c0e263b8529304a995e8e2ba53991e52d91e19c8
